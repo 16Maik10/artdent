@@ -1,0 +1,96 @@
+.main {
+
+    margin: 40px auto;
+
+    &__titles {
+        max-width: 584px;
+    }
+
+    &__title {
+        font: 500 50px/51px 'Noto Serif';
+        color: #2B2B2B;
+
+        & > span {
+            color: #00D6C9;
+            font-style: italic;
+            font-weight: 700;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 30px;
+        font: 600 20px/25px 'Gilroy semibold';
+        color: #495254;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 46px;
+    }
+
+    &__appointment {
+        color: #fff;
+        padding: 10px 54px;
+        background-color: #00b4da;
+        font: 600 20px/25px 'Gilroy semibold';
+        border-radius: 30px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        transition: all 0.4s linear;
+
+        &:hover {
+            color: #00b4da;
+            background-color: #fff;
+            border-color: #00b4da;
+        }
+    }
+
+    &__description {
+        max-width: 140px;
+        font: 600 16px/20px 'Gilroy semibold';
+        color: #495254;
+        margin-right: 36px;
+    }
+
+    &__play {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: url(../images/play.svg) no-repeat center/30%, #00D6C9;
+        border: 7px solid #a5fdf8;
+        cursor: pointer;
+        transition: transform 0.3s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .main {
+
+        &__title {
+            font-size: 30px;
+            line-height: 31px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__actions {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__appointment {
+            order: 2;
+            margin-top: 50px;
+        }
+    }
+}

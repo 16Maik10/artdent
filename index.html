@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Стоматология Артдент</title>
+</head>
+<body>
+    <header class="header container">
+        <a href="/">
+            <img src="images/logo.svg" alt="logo" class="header__logo">
+        </a>
+        <nav class="navbar">
+            <ul class="navbar__list" id="navbar-list">
+                <li class="navbar__listItem">
+                    <a href="#">Акции</a>
+                </li>
+                <li class="navbar__listItem">
+                    <a class="dropdown" href="#">Услуги</a>
+                </li>
+                <li class="navbar__listItem">
+                    <a href="#">Специалисты</a>
+                </li>
+                <li class="navbar__listItem">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="navbar__listItem">
+                    <a href="#">Статьи</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__call">
+            <a class="callLink" href="tel:+74957990145">+7-495-799-01-45</a>
+            <a class="recallLink" href="#">Перезвоните мне</a>
+        </div>
+        <a class="phoneCall" href="tel:+74957990145"></a>
+        <button class="burger-nav" id="burger" />
+    </header>
+    <main class="main container">
+        <div class="main__titles">
+            <h1 class="main__title">
+                Лечение зубов любой сложности <span>в Москве</span>
+            </h1>
+            <h2 class="main__subtitle">
+                Команда опытных специалистов зубной клиники «Art Dent»
+                проведет работы любой сложности в кратчайшие сроки!
+            </h2>
+            <div class="main__actions">
+                <button class="main__appointment">Записаться на прием</button>
+                <p class="main__description">Узнать подробнее о клинике</p>
+                <button class="main__play"></button>
+            </div>
+        </div>
+    </main>
+    <section class="container">
+        <div class="cards">
+            <div class="cards__item card">
+                <h3 class="card__title card__title_location">Адрес</h3>
+                <p class="card__description">г. Москва, ул. Пудовкина, д. 5 метро Киевская</p>
+            </div>
+            <div class="cards__item card">
+                <h3 class="card__title card__title_hours">Часы работы</h3>
+                <p class="card__description">Работаем без выходных с 9:00 до 21:00</p>
+            </div>
+            <div class="cards__item card">
+                <h3 class="card__title card__title_social">соц. сети</h3>
+                <p class="card__description">Много интересного <br /> в нашем <a href="#">Инстаграм</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>

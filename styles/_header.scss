@@ -1,0 +1,146 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    & a {
+        display: flex;
+        font: 700 18px/25px 'Noto Serif';
+        color: #2b2b2b;
+    }
+
+    &__call {
+        & > .callLink {
+            font-size: 20px;
+            margin-bottom: 7px;
+        
+            &::before {
+                content: "";
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    background: url("../images/phone.svg") no-repeat center;
+            }
+        }
+
+        & > .recallLink {
+            justify-content: end;
+            font: 14px/17px 'Gilroy semibold';
+            text-decoration-line: underline;
+            color: #0097B7;
+        }
+    }
+}
+
+.navbar {
+    margin-left: auto;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    
+        &Item {
+            list-style-type: none;
+            margin-right: 44px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+    
+            & > a {
+                align-items: center;
+    
+                &.dropdown::after {
+                    content: "";
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    background: url("../images/arrow.svg") no-repeat center;
+                }
+            }
+    
+            &:first-of-type {
+                margin-right: 71px;
+            }
+    
+            &:last-of-type {
+                margin-right: 57px;
+            }
+        }
+    }
+}
+
+.burger-nav {
+    display: none;
+    cursor: pointer;
+    width: 51px;
+    height: 51px;
+    border: none;
+    background: url(../images/Burger.svg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 1180px) {
+    .navbar {
+        margin-left: 0;
+    
+        &__listItem {
+                margin-right: 20px;
+        
+                &:first-of-type {
+                    margin-right: 35px;
+                }
+        
+                &:last-of-type {
+                    margin-right: 25px;
+                }
+            }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+
+        &__list {
+            flex-direction: column;
+            position: absolute;
+            background-color: #fff;
+            padding: 0;
+            border-radius: 15px;
+            top: 75px;
+            right: 10px;
+            height: 0;
+            overflow: hidden;
+            transition: padding 0.8s, height 0.4s;
+
+            &_showBurger {
+                padding: 20px;
+                height: 125px;
+            }
+        }
+    }
+
+    .burger-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+
+        &__logo {
+            width: 125px;
+        }
+
+        &__call {
+            display: none;
+        }
+    }
+
+    .phoneCall {
+        width: 51px;
+        height: 51px;
+        background: url(../images/Call.png) no-repeat center/cover;
+    }
+}

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Gilroy semibold';
+    src: url(../fonts/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+body {
+    background: url(../images/background.png) no-repeat top right/cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1180px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 500px){
+    body {
+        background-size: 200vw;
+        background-position: center right;
+    }
+}
+
+@import "header", "main", "cards"
